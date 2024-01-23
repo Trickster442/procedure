@@ -138,7 +138,7 @@ page 50149 tablePractise_ko_card_page
 
                     end;
                 }
-            }
+            } 
             group(With_reference)
             {
                 action(multiply_with_ref)
