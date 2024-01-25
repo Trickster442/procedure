@@ -19,6 +19,10 @@ table 50001 "Parking Lot"
             DataClassification = ToBeClassified;
             TableRelation = "No. Series";
         }
+        field(4; "Invoice"; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys
@@ -43,6 +47,7 @@ table 50001 "Parking Lot"
         if "Parking Id" = '' then begin
             setup.Get();
             noSerMng.InitSeries(setup."Parking No", setup."Parking No", 0D, "Parking Id", "Park");
+            noSerMng.InitSeries(setup."Invoice Nos.", setup."Invoice Nos.", 0D, "Invoice", "Park");
             setup.Modify();
         end;
     end;

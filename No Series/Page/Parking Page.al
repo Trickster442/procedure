@@ -22,6 +22,11 @@ page 50002 "Parking Lot List"
                     ApplicationArea = All;
                     
                 }
+                field(Invoice;Rec.Invoice)
+                {
+                    ApplicationArea = All;
+                    
+                }
             }
         }
     }

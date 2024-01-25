@@ -18,6 +18,10 @@ page 50003 "Parking Lot Card"
                 {
                     ApplicationArea = All;
                 }
+                field(Invoice; Rec.Invoice)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
