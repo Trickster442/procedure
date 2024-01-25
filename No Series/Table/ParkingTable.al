@@ -8,6 +8,7 @@ table 50001 "Parking Lot"
         field(1; "Parking Id"; Code[20])
         {
             DataClassification = ToBeClassified;
+            Editable = false;
 
         }
         field(2; "Car Name"; Code[20])
@@ -22,12 +23,13 @@ table 50001 "Parking Lot"
         field(4; "Invoice"; Code[20])
         {
             DataClassification = ToBeClassified;
+            Editable = false;
         }
     }
 
     keys
     {
-        key(Key1; "Parking Id")
+        key(Key1; "Parking Id", "Invoice")
         {
             Clustered = true;
         }
