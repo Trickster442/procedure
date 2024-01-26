@@ -3,8 +3,8 @@ query 50159 queryTable_practise
     QueryType = Normal;
     TopNumberOfRows = 5;
     // OrderBy = ascending(Pricing);
-    Caption = 'Query Table Practise';
 
+    Caption = 'Query Table Practise';
 
 
     elements
