@@ -25,7 +25,7 @@ query 50159 queryTable_practise
             }
             column(Pricing; "Unit Price")
             {
-
+                Method = Max;
             }
 
         }
