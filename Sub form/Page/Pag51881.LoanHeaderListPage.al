@@ -45,6 +45,12 @@ page 51881 "Loan Header List Page"
                 {
                     ApplicationArea = All;
                 }
+                field("Total Loan Paid";Rec."Total Loan Paid")
+                {
+                    ApplicationArea = All;
+                    
+
+                }
             }
         }
     }

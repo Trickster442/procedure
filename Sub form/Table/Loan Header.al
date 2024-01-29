@@ -57,6 +57,11 @@ table 51880 "Loan Header Table"
             DataClassification = ToBeClassified;
             TableRelation = "No. Series";
         }
+        field(10; "Total Loan Paid"; Decimal)
+        {
+            DataClassification = ToBeClassified;
+            
+        }
     }
 
     keys
@@ -81,10 +86,10 @@ table 51880 "Loan Header Table"
         if "Loan Id" = '' then begin
             setupTable.Get();
             numMan.InitSeries(setupTable."Customer Nos.", setupTable."Customer Nos.", 0D, "Loan Id", "Number series");
-
         end;
 
     end;
+
 
 
 }

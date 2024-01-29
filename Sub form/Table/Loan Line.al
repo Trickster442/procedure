@@ -17,6 +17,8 @@ table 51890 "Loan Line"
         field(3; "Date"; Date)
         {
             DataClassification = ToBeClassified;
+
+
         }
         field(4; "Paid Amt"; Decimal)
         {
@@ -32,32 +34,9 @@ table 51890 "Loan Line"
         }
     }
 
-    fieldgroups
-    {
-        // Add changes to field groups here
-    }
 
     var
         myInt: Integer;
 
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
 
 }
