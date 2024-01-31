@@ -59,8 +59,10 @@ table 51880 "Loan Header Table"
         }
         field(10; "Total Loan Paid"; Decimal)
         {
-            DataClassification = ToBeClassified;
-            
+            FieldClass = FlowField;
+            CalcFormula = sum("Loan Line"."Paid Amt" where("Loan No" = field("Loan Id")));
+
+
         }
     }
 

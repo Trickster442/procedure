@@ -17,6 +17,15 @@ table 51890 "Loan Line"
         field(3; "Date"; Date)
         {
             DataClassification = ToBeClassified;
+            trigger OnValidate()
+            var
+                trex: Record "Loan Header Table";
+            begin
+                trex.get(trex."Loan Start", trex."Loan Ended");
+                if (rec.Date < trex."Loan Start") and (rec.Date > trex."Loan Ended") then begin
+                    Error('Inserted wrong');
+                end
+            end;
 
 
         }
