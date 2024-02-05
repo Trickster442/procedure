@@ -21,7 +21,7 @@ table 51890 "Loan Line"
             var
                 trex: Record "Loan Header Table";
             begin
-                trex.get(trex."Loan Start", trex."Loan Ended");
+                trex.Get(trex."Loan Start", trex."Loan Ended");
                 if (rec.Date < trex."Loan Start") and (rec.Date > trex."Loan Ended") then begin
                     Error('Inserted wrong');
                 end
@@ -37,7 +37,7 @@ table 51890 "Loan Line"
 
     keys
     {
-        key(Key1; "Loan No", "Line No")
+        key(Key1; "Loan No")
         {
             Clustered = true;
         }

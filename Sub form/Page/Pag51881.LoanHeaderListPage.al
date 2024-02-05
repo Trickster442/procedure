@@ -3,7 +3,7 @@ page 51881 "Loan Header List Page"
     ApplicationArea = All;
     Caption = 'Loan Header List Page';
     PageType = List;
-    SourceTable = "Loan Header Table";
+    SourceTable = 51880;
     UsageCategory = Lists;
     CardPageId = "Loan Header Card Page";
 
@@ -45,10 +45,10 @@ page 51881 "Loan Header List Page"
                 {
                     ApplicationArea = All;
                 }
-                field("Total Loan Paid";Rec."Total Loan Paid")
+                field("Total Loan Paid"; Rec."Total Loan Paid")
                 {
                     ApplicationArea = All;
-                
+
                 }
             }
         }

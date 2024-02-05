@@ -1,33 +1,30 @@
-query 50119 "Vendors with purchased"
+query 50119 "Customer Sales By Quantity"
 {
     QueryType = Normal;
-
-
+    OrderBy = descending(Quantity);
     elements
     {
-        dataitem(Vend; Vendor)
+        dataitem(Customer; Customer)    //extracting data from customer table
         {
-            column(No_; "No.")
+            column(custNo_; "No.")
             {
 
             }
-            column(VendorName; Name)
+            column(custName; Name)
             {
 
             }
-            column(Balance__LCY_; "Balance (LCY)")
+
+            dataitem(Sales_Line; "Sales Line")  //table's data that you wish to extract
             {
+                DataItemLink = "Sell-to Customer No." = Customer."No.";  //linking the common field or field with same type of record
+                SqlJoinType = InnerJoin;
 
+                column(Quantity; Quantity)
+                {
+                    Method = Sum;
+                }
             }
-            // dataitem(Purchase_Header; "Purchase Header")
-            // {
-            //     DataItemLink = Purchase_Header."No." = Vend.No_ ;
-            //     SqlJoinType = InnerJoin ; 
-            //     column(Status;Status)
-            //     {
-
-            //     }
-            // }
         }
     }
 

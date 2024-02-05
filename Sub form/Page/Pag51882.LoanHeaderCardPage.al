@@ -3,6 +3,7 @@ page 51882 "Loan Header Card Page"
     Caption = 'Loan Header Card Page';
     PageType = Card;
     SourceTable = "Loan Header Table";
+    
 
     layout
     {
@@ -44,20 +45,6 @@ page 51882 "Loan Header Card Page"
                 {
                     ApplicationArea = All;
                 }
-                // field("Total Loan Paid"; Rec."Total Loan Paid")
-                // {
-                //     ApplicationArea = All;
-                //     trigger OnValidate()
-                //     var
-                //         total_sum: Record "Loan Line";
-                //     begin
-                //         repeat
-                //             total_sum.SetRange("Paid Amt");
-                //             rec."Total Loan Paid" := total_sum."Paid Amt";
-                //             total_sum.Next();
-                //         until total_sum."Paid Amt" = 0;
-                //     end;
-                // }
                 field("Total Loan Paid";Rec."Total Loan Paid")
                 {
                     ApplicationArea = All;
