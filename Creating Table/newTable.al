@@ -7,10 +7,12 @@ table 50149 practiseTable
         field(1; Pk; Integer)
         {
             DataClassification = ToBeClassified;
+
         }
         field(2; Number1; Integer)
         {
             DataClassification = ToBeClassified;
+            InitValue = 5;
         }
         field(3; Number2; Integer)
         {

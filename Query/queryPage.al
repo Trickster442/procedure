@@ -48,6 +48,5 @@ page 50121 "Lot avail. by Bin"
                 rec.Quantity := Lotavail.Sum_Quantity;
             until Lotavail.Item_No_ = '';
         end
-
     end;
 }
