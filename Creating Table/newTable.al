@@ -13,10 +13,12 @@ table 50149 practiseTable
         {
             DataClassification = ToBeClassified;
             InitValue = 5;
+            NotBlank = true;
         }
         field(3; Number2; Integer)
         {
             DataClassification = ToBeClassified;
+            NotBlank = true;
         }
         field(4; Result_Mul; Decimal)
         {
