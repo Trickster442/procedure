@@ -27,6 +27,11 @@ report 50131 "Vendor Practise Report"
             {
 
             }
+
+            column(No_; "No.")
+            {
+
+            }
             trigger OnAfterGetRecord()
             begin
                 compInfo.get();
