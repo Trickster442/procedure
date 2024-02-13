@@ -9,7 +9,11 @@ report 50141 "Sales Details"
     dataset
     {
         dataitem("Sales Header"; "Sales Header")
+
         {
+            RequestFilterFields = "No.";
+            DataItemTableView = sorting("Sell-to Customer No.");
+
             column(Sell_to_Customer_Name; "Sell-to Customer Name")
             {
 
@@ -27,9 +31,24 @@ report 50141 "Sales Details"
             {
 
             }
+            dataitem("Sales Line"; "Sales Line")
+            {
+                DataItemLinkReference = "Sales Header";
+                DataItemLink = "Sell-to Customer No." = field("Sell-to Customer No.");
+                column(Sell_to_Customer_No_; "Sell-to Customer No.")
+                {
+
+                }
+                column(Amount; Amount)
+                {
+
+                }
+            }
         }
-        
+
+
+
     }
-    
+
 
 }
