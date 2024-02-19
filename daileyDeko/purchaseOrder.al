@@ -9,9 +9,9 @@ report 50121 "Purchase Order Report"
     {
         dataitem("Purchase Header"; "Purchase Header")
         {
-            DataItemTableView = where(Status  = filter(1));
-            RequestFilterFields = "No.";
-            
+            DataItemTableView = where(Status = filter(1));
+            RequestFilterFields = "Buy-from Vendor Name";
+
 
             column(Buy_from_Vendor_Name; "Buy-from Vendor Name")
             {
@@ -40,6 +40,7 @@ report 50121 "Purchase Order Report"
             dataitem("Purchase Line"; "Purchase Line")
             {
                 DataItemLinkReference = "Purchase Header";
+                DataItemLink = "Document No." = field("No.");
                 column(Type; Type)
                 {
 
