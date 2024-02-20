@@ -9,10 +9,16 @@ report 50121 "Purchase Order Report"
     {
         dataitem("Purchase Header"; "Purchase Header")
         {
-            DataItemTableView = where(Status = filter(1));
+            DataItemTableView = where(Status = filter(1), "Document Type" = filter(1));
             RequestFilterFields = "Buy-from Vendor Name";
+            column(No_; "Purchase Header"."No.")
+            {
 
+            }
+            column(Document_Type; "Document Type")
+            {
 
+            }
             column(Buy_from_Vendor_Name; "Buy-from Vendor Name")
             {
 
@@ -61,6 +67,10 @@ report 50121 "Purchase Order Report"
                 }
 
                 column(Unit_of_Measure_Code; "Unit of Measure Code")
+                {
+
+                }
+                column(Amount; "Purchase Line"."Line Amount")
                 {
 
                 }

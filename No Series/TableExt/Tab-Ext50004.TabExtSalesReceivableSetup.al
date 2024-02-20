@@ -7,5 +7,11 @@ tableextension 50004 "Tab-Ext-Sales-Receivable-Setup" extends "Sales & Receivabl
             DataClassification = ToBeClassified;
             TableRelation = "No. Series";
         }
+
+        field(50001; "Patient Code"; Code[20])
+        {
+            DataClassification = ToBeClassified ; 
+            TableRelation = "No. Series";
+        }
     }
 }
