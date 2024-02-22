@@ -4,36 +4,46 @@ page 50556 "Doctor Table list"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Doctor Table";
+    CardPageId = 50557;
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            repeater(GroupName)
             {
-                field("S.N";Rec."S.N")
+                field("S.N"; Rec."S.N")
                 {
                     ApplicationArea = All;
 
                 }
 
-                field(Name;Rec.Name){
+                field(Name; Rec.Name)
+                {
 
                 }
 
-                field(Age;Rec.Age){
+                field(Age; Rec.Age)
+                {
 
                 }
 
-                field(Specialty;Rec.Specialty){
+                field(Specialty; Rec.Specialty)
+                {
 
                 }
 
-                field("Experience in years";Rec."Experience in years"){
+                field("Experience in years"; Rec."Experience in years")
+                {
 
                 }
 
-                
+                field(Email; Rec.Email)
+                {
+
+                }
+
+
             }
         }
     }

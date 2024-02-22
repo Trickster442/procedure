@@ -13,27 +13,31 @@ page 50557 "Doctor Table card"
                 {
                     ApplicationArea = All;
                     Editable = false;
-
                 }
 
                 field(Name; Rec.Name)
                 {
-
+                    ApplicationArea = All;
                 }
 
                 field(Age; Rec.Age)
                 {
-
+                    ApplicationArea = All;
                 }
 
                 field(Specialty; Rec.Specialty)
                 {
-
+                    ApplicationArea = All;
                 }
 
                 field("Experience in years"; Rec."Experience in years")
                 {
+                    ApplicationArea = All;
+                }
 
+                field(Email; Rec.Email)
+                {
+                    ApplicationArea = All;
                 }
             }
         }

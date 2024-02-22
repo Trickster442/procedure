@@ -34,6 +34,14 @@ table 50555 "Doctor Table"
         {
             DataClassification = ToBeClassified;
             TableRelation = "No. Series";
+            ValidateTableRelation = true;
+        }
+
+        field(7; Email; Text[30])
+        {
+            DataClassification = ToBeClassified;
+            ExtendedDatatype = EMail;    //it will create a URL like type data which will provide another color on hover 
+            //there are other several option like masked, phone number and many more
         }
     }
 
