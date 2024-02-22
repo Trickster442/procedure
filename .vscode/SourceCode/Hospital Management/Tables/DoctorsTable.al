@@ -18,6 +18,8 @@ table 50555 "Doctor Table"
         field(3; Age; Integer)
         {
             DataClassification = ToBeClassified;
+            MinValue = 20;
+            MaxValue = 80;
         }
 
         field(4; Specialty; Text[50])
@@ -42,6 +44,12 @@ table 50555 "Doctor Table"
             DataClassification = ToBeClassified;
             ExtendedDatatype = EMail;    //it will create a URL like type data which will provide another color on hover 
             //there are other several option like masked, phone number and many more
+        }
+
+        field (8; No ; Integer){
+            DataClassification = ToBeClassified;
+            AutoIncrement = true ; 
+            Editable = false ; 
         }
     }
 

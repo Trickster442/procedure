@@ -20,28 +20,33 @@ page 50556 "Doctor Table list"
 
                 field(Name; Rec.Name)
                 {
-
+                    ApplicationArea = All ;
                 }
 
                 field(Age; Rec.Age)
                 {
-
+                    ApplicationArea = All ;
                 }
 
                 field(Specialty; Rec.Specialty)
                 {
-
+                    ApplicationArea = All ;
                 }
 
                 field("Experience in years"; Rec."Experience in years")
                 {
-
+                    ApplicationArea = All ;
                 }
 
                 field(Email; Rec.Email)
                 {
-
+                    ApplicationArea = All ;
                 }
+
+                field (No;Rec.No){
+                    ApplicationArea = All ;
+                }
+
 
 
             }

@@ -39,6 +39,11 @@ page 50557 "Doctor Table card"
                 {
                     ApplicationArea = All;
                 }
+
+                field(No; Rec.No)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
