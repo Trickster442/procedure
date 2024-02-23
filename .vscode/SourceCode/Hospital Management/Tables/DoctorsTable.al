@@ -46,11 +46,12 @@ table 50555 "Doctor Table"
             //there are other several option like masked, phone number and many more
         }
 
-        field (8; No ; Integer){
+        field(8; No; Integer)
+        {
             DataClassification = ToBeClassified;
-            AutoIncrement = true ; 
-            Editable = false ; 
-        }
+            AutoIncrement = true;
+            Editable = false;
+        }  
     }
 
     keys
