@@ -53,6 +53,31 @@ page 50990 "Processing action"
                 end;
             }
         }
+
+        // To navigate to certain object from this page
+        area(Navigation)
+        {
+            // If you wish to create a multiple navigation sub menu buttons you can group and add them in group
+
+            group("Navigate to")
+            {
+
+                action("Customer Card")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Customer Card';
+                    RunObject = page "Customer Card";
+                }
+
+                action("Vendor Card")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Vendor Card';
+                    RunObject = page "Vendor Card";
+
+                }
+            }
+        }
     }
 
 
