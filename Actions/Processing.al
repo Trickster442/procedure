@@ -78,6 +78,19 @@ page 50990 "Processing action"
                 }
             }
         }
+
+        area(Creation)
+        {
+            group(Create)
+            {
+                action("New Document")
+                {
+                    ApplicationArea = All;
+                    RunObject = page "Customer Card";
+                    Image = Account; //you can import default image into your action with the help of image properties
+                }
+            }
+        }
     }
 
 

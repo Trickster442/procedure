@@ -1,10 +1,10 @@
 page 51891 "Line Sub Form"
 {
     PageType = ListPart;
-    ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = "Loan Line";
     AutoSplitKey = true;
+
+
 
     layout
     {

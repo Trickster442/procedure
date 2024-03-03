@@ -3,8 +3,6 @@ page 51882 "Loan Header Card Page"
     Caption = 'Loan Header Card Page';
     PageType = Card;
     SourceTable = "Loan Header Table";
-
-
     layout
     {
         area(content)
@@ -52,7 +50,7 @@ page 51882 "Loan Header Card Page"
 
                 }
             }
-            part("Loan Line"; "Line Sub Form")
+            part("Line Sub Form"; "Line Sub Form")
             {
                 SubPageLink = "Loan No" = field("Loan Id");
             }
