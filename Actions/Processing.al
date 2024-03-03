@@ -91,6 +91,15 @@ page 50990 "Processing action"
                 }
             }
         }
+
+        area(Reporting)
+        {
+            action("Report")
+            {
+                ApplicationArea = All;
+                RunObject = report "Analysis Report";
+            }
+        }
     }
 
 
